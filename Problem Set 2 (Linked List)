@@ -1,0 +1,76 @@
+        public static IntNode addBefore(IntNode front, int target, int newItem) {
+              /* COMPLETE THIS METHOD */
+              IntNode prev = front;
+              
+              for(IntNode crnt = front.next; crnt.next != null; crnt = crnt.next, prev = prev.next){
+              if(crnt.data == target){
+              prev = new IntNode(newItem, prev.next);
+              }
+         
+              }
+              return front;
+        } 
+        
+        
+         public static IntNode addBeforeLast(IntNode front, int item) {
+              for(IntNode crnt = front.next, IntNode prev = front ; crnt.next != null; crnt = crnt.next, prev = prev.next){
+              if(crnt.next = null){
+              prev.next = new IntNode(item, crnt);
+              }
+          
+              }
+              
+              return front;
+              
+        } 
+        
+        
+         public static int numberOfOccurrences(StringNode front, String target) {
+              int counter = 0;
+              for(StringNode crnt = front; crnt.next != null; crnt = crnt.next;){
+              if(crnt.data = target){
+              counter++;
+              }
+              }
+              return counter;
+        } 
+       
+       
+       
+       public static void deleteEveryOther(IntNode front) {
+       
+              /* COMPLETE THIS METHOD */
+              for(IntNode crnt = front; crnt.next != null; crnt = crnt.next){
+              crnt.next = null;
+              crnt = crnt.next.next;
+              }
+              
+              return front;
+        }
+        
+        
+         public static StringNode deleteAllOccurrences(StringNode front, String target) {
+              for(StringNode crnt = front; crnt.next != null; crnt = crnt.next){
+              if(crnt.data = target){
+              crnt = null;
+              crnt.next = crnt.next.next;
+  
+              }
+              }
+              return front;
+        } 
+        
+        
+        
+        // creates a new linked list consisting of the items common to the input lists
+      // returns the front of this new linked list, null if there are no common items
+      public IntNode commonElements(IntNode frontL1, IntNode frontL2) {
+      boolean common = false;
+      for(IntNode crnt = frontL1; crnt.next != null; crnt = crnt.next){
+      if()
+      
+      
+      }
+      
+        
+      }
